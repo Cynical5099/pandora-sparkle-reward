@@ -20,41 +20,41 @@ const testimonials = [
 
 const SocialProofSection = () => {
   return (
-    <section className="py-16 lg:py-24 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+    <section className="py-12 sm:py-16 lg:py-24 bg-background">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-4">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-4 px-4 sm:px-0">
             What Our Members Say
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4 sm:px-0">
             Real stories from real people who claimed their Pandora rewards
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="bg-card border border-border rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105"
+              className="bg-card border border-border rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 mx-4 sm:mx-0"
             >
               {/* Rating Stars */}
-              <div className="flex justify-center mb-4">
+              <div className="flex justify-center mb-3 sm:mb-4">
                 {[...Array(testimonial.rating)].map((_, starIndex) => (
                   <Star 
                     key={starIndex} 
-                    className="w-5 h-5 fill-cta text-cta" 
+                    className="w-4 h-4 sm:w-5 sm:h-5 fill-cta text-cta" 
                   />
                 ))}
               </div>
               
               {/* Testimonial Text */}
-              <blockquote className="text-muted-foreground italic text-center mb-6 leading-relaxed">
+              <blockquote className="text-sm sm:text-base text-muted-foreground italic text-center mb-4 sm:mb-6 leading-relaxed">
                 "{testimonial.text}"
               </blockquote>
               
               {/* Name */}
               <div className="text-center">
-                <p className="font-semibold text-foreground">
+                <p className="font-semibold text-foreground text-sm sm:text-base">
                   {testimonial.name}
                 </p>
               </div>

@@ -34,29 +34,29 @@ const faqData = [
 
 const FAQSection = () => {
   return (
-    <section className="py-16 lg:py-24 bg-secondary/20">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+    <section className="py-12 sm:py-16 lg:py-24 bg-secondary/20">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-4">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-4 px-4 sm:px-0">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4 sm:px-0">
             Everything you need to know about claiming your Pandora reward
           </p>
         </div>
         
-        <div className="max-w-4xl mx-auto">
-          <Accordion type="single" collapsible className="w-full space-y-4">
+        <div className="max-w-4xl mx-auto px-4 sm:px-0">
+          <Accordion type="single" collapsible className="w-full space-y-3 sm:space-y-4">
             {faqData.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="bg-background border border-border rounded-xl px-6 shadow-sm hover:shadow-md transition-shadow"
+                className="bg-background border border-border rounded-lg sm:rounded-xl px-4 sm:px-6 shadow-sm hover:shadow-md transition-shadow"
               >
-                <AccordionTrigger className="text-left text-lg font-semibold text-foreground hover:text-cta py-6">
+                <AccordionTrigger className="text-left text-base sm:text-lg font-semibold text-foreground hover:text-cta py-4 sm:py-6 pr-2">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
+                <AccordionContent className="text-sm sm:text-base text-muted-foreground leading-relaxed pb-4 sm:pb-6">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
