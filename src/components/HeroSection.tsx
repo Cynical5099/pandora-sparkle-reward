@@ -16,7 +16,8 @@ const HeroSection = () => {
               Gift Card
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-6 sm:mb-8 leading-relaxed px-2 sm:px-0">
-              Complete a few simple deals and enjoy your jewelry shopping spree.
+              Complete a few simple deals and enjoy your jewelry shopping spree. 
+              <span className="font-semibold text-cta"> The more deals you complete, the higher your reward!</span>
             </p>
             <div className="px-4 sm:px-0">
               <Button 

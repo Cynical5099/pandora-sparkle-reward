@@ -12,7 +12,7 @@ const faqData = [
   },
   {
     question: "How many deals must I complete?",
-    answer: "You need to complete at least 3-5 sponsored deals to qualify for your Pandora gift card. The more deals you complete, the faster you'll receive your reward. Each deal has clear instructions and requirements that are easy to follow."
+    answer: "You need to complete at least 3-5 sponsored deals to qualify for your base reward. However, the more deals you complete, the higher your reward amount! Complete additional deals to maximize your Pandora gift card value and receive it even faster."
   },
   {
     question: "Is this legitimate?",

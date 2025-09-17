@@ -9,7 +9,7 @@ const steps = [
   {
     icon: Gift,
     title: "Complete Deals",
-    description: "Complete at least 3–5 sponsored deals. The more you complete, the faster your gift card arrives."
+    description: "Complete at least 3–5 sponsored deals. The more deals you complete, the higher your reward amount and the faster it arrives!"
   },
   {
     icon: Mail,
@@ -27,7 +27,7 @@ const HowItWorksSection = () => {
             How It Works
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4 sm:px-0">
-            Three simple steps to claim your Pandora gift card
+            Three simple steps to earn bigger rewards with more deals
           </p>
         </div>
         

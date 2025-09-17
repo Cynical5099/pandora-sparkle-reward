@@ -16,7 +16,8 @@ const FinalCTASection = () => {
             </h2>
             <p className="text-lg sm:text-xl text-muted-foreground mb-6 sm:mb-8 leading-relaxed px-4 sm:px-0">
               Join thousands of satisfied members who have already received their rewards. 
-              Your dream Pandora jewelry is just a few clicks away.
+              <span className="font-semibold text-cta">Complete more deals to earn higher rewards</span> – 
+              your dream Pandora jewelry is just a few clicks away.
             </p>
           </div>
           
